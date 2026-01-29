@@ -4,7 +4,7 @@ import Button from "./Button";
 
 export default function Landing() {
   return (
-    <div
+    <section
       id="home"
       className="relative bg-gray-10 w-screen h-screen text-gray-13"
     >
@@ -34,6 +34,6 @@ export default function Landing() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

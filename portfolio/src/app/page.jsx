@@ -1,10 +1,12 @@
 "use client";
 import Landing from "@/components/Landing";
+import AboutMe from "@/components/AboutMe";
 
 export default function Home() {
   return (
-    <div className="p-10">
+    <div>
       <Landing />
+      <AboutMe />
     </div>
   );
 }
