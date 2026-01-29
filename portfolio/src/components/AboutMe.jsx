@@ -26,7 +26,7 @@ export default function AboutMe() {
       id="about"
       className="w-full min-h-screen bg-gray-11 flex flex-col gap-10 justify-center items-center"
     >
-      <div className="flex flex-col justify-center items-center gap-8 mt-28">
+      <div className="flex flex-col justify-center items-center gap-8">
         <p className="uppercase text-gray-13 text-6xl font-serif font-extrabold ">
           About me
         </p>
