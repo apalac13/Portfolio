@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: var(--font-noto-sans), sans-serif;
+  --font-serif: var(--font-noto-serif), serif;
+
+  --color-gray-10: #1a1a1a;
+  --color-gray-11: #808080;
+  --color-gray-12: #d9d9d9;
+  --color-gray-13: #ededed;
+  --color-gold-20: #bfa25b;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,6 +20,7 @@
 html {
   max-width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -17,5 +29,6 @@ body {
   text-align: center;
   padding: 0 !important;
   max-width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
