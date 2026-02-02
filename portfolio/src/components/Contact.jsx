@@ -9,7 +9,7 @@ export default function Contact() {
       id="contact"
       className="relative flex items-center justify-center bg-cover bg-center bg-no-repeat w-full min-h-screen"
       style={{
-        backgroundImage: "var(--image-contact)",
+        backgroundImage: "url('/contact.jpg')",
       }}
     >
       <div className="absolute inset-0 bg-gray-10/60 "></div>
