@@ -4,6 +4,9 @@ import { notoSans, notoSerif } from "./fonts";
 export const metadata = {
   title: "Ana Bradaric",
   description: "Ana Bradaric",
+  icons: {
+    icon: "/anabradaric.svg",
+  },
 };
 
 export default function RootLayout({ children }) {
