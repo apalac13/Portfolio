@@ -18,7 +18,6 @@ export default function Project({
       initial={{ opacity: 0, x: -20 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
-      viewport={{ once: true }}
       className="w-full h-full flex flex-col items-center gap-10  bg-gold-20 border rounded-lg border-gold-20 py-14"
     >
       <p className="font-serif text-gray-10 text-2xl sm:text-3xl md:text-4xl">

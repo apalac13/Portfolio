@@ -32,7 +32,6 @@ export default function AboutMe() {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          viewport={{ once: true }}
           className="uppercase text-4xl text-gray-13 xl:text-6xl sm:text-5xl font-serif font-extrabold "
         >
           About me
@@ -41,7 +40,6 @@ export default function AboutMe() {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          viewport={{ once: true }}
           className="text-gray-13 text-lg sm:text-xl xl:text-2xl text-center px-4"
         >
           I am Ana Bradarić, a web developer with a Master’s degree in Computer
@@ -58,7 +56,6 @@ export default function AboutMe() {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          viewport={{ once: true }}
           className="font-serif text-gray-10 text-3xl xl:text-4xl font-extrabold"
         >
           technologies

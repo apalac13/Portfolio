@@ -13,7 +13,7 @@ export default function Landing() {
       <Navigation />
       <motion.div
         initial={{ opacity: 0, x: -20 }}
-        animate={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
         className=" w-full xxs:w-3/4 absolute top-[60%] xxs:left-20 pl-10 pr-2 xxs:pl-0 xxs:pr-0  translate-y-[-50%] flex flex-col gap-12 justify-center items-start    "
       >

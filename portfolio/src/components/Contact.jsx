@@ -19,7 +19,6 @@ export default function Contact() {
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          viewport={{ once: true }}
           className="w-full flex flex-col items-start gap-3 "
         >
           <p className="font-serif font-extrabold text-gray-13 text-4xl xl:text-6xl sm:text-5xl ml-2">
@@ -40,7 +39,6 @@ export default function Contact() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          viewport={{ once: true }}
           className="flex flex-col gap-9"
         >
           <p className="font-serif text-gray-13 text-2xl sm:text-3xl mmd:text-4xl">

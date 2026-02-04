@@ -48,7 +48,6 @@ export default function Projects() {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          viewport={{ once: true }}
           className="uppercase text-gray-10 text-4xl xl:text-6xl sm:text-5xl font-serif font-extrabold"
         >
           Projects
