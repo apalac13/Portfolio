@@ -23,7 +23,7 @@ export default function Projects() {
       desktop: sapedesktop,
       mobile: sapemobile,
       description:
-        "A React (Vite) application with a JSON Server backend that provides a complete system for animal adoption and donations, allowing users to adopt animals or send donations, while admins can manage animals, create donation requests, and approve submitted donations.",
+        "A React (Vite) application with a JSON Server backend that provides a complete system for animal adoption and donations, allowing users to adopt animals or send donations, while admins can manage animals, create donation requests, and approve submitted donations.(Please wait a few seconds for the full view when visitig website.)",
       github: "https://github.com/apalac13/SretneSape",
       demo: "sretne-sape.vercel.app",
     },
@@ -32,7 +32,7 @@ export default function Projects() {
       desktop: schooldesktop,
       mobile: schoolmobile,
       description:
-        "A React (Vite) application with a JSON Server backend that manages workshop registrations. Users can browse workshops and lecturers, view which workshops each lecturer teaches, and apply for available workshops. An admin panel provides full CRUD functionality for workshops, lecturers, and organizations, including tracking the number of applications and workshop dates. Lecturers are linked to organizations, enabling structured and relational data management within the system.",
+        "A React (Vite) application with a JSON Server backend that manages workshop registrations. Users can browse workshops and lecturers, view which workshops each lecturer teaches, and apply for available workshops. An admin panel provides full CRUD functionality for workshops, lecturers, and organizations, including tracking the number of applications and workshop dates. Lecturers are linked to organizations, enabling structured and relational data management within the system. (Please wait a few seconds for the full view when visiting website.)",
       github: "https://github.com/apalac13/EditSchoolPrijave",
       demo: "edit-school-prijave.vercel.app",
     },
