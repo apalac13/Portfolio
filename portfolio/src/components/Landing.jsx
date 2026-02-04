@@ -1,6 +1,7 @@
 "use client";
 import Navigation from "./Navigation";
 import Button from "./Button";
+import { motion } from "framer-motion";
 
 export default function Landing() {
   return (
@@ -9,7 +10,12 @@ export default function Landing() {
       className="relative bg-gray-10 w-screen h-screen text-gray-13"
     >
       <Navigation />
-      <div className=" w-full xxs:w-3/4 absolute top-[60%] xxs:left-20 pl-10 pr-2 xxs:pl-0 xxs:pr-0  translate-y-[-50%] flex flex-col gap-12 justify-center items-start    ">
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className=" w-full xxs:w-3/4 absolute top-[60%] xxs:left-20 pl-10 pr-2 xxs:pl-0 xxs:pr-0  translate-y-[-50%] flex flex-col gap-12 justify-center items-start    "
+      >
         <div className="text-left">
           <p className="font-serif text-3xl max-xl:text-2xl max-sm:text-xl">
             Web developer
@@ -27,7 +33,7 @@ export default function Landing() {
           <Button text={"VIEW PROJECTS"} color={"white"} />
           <Button text={"CONTACT"} color={"gray"} />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
