@@ -62,7 +62,7 @@ export default function AboutMe() {
         </motion.p>
         <div className="xl:grid xl:grid-cols-7 flex flex-wrap justify-center  gap-4">
           {technologies.map((technology, index) => (
-            <Technology key={index} text={technology} index={index} />
+            <Technology key={index} text={technology} />
           ))}
         </div>
       </div>
