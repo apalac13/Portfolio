@@ -43,7 +43,7 @@ export default function Projects() {
       className="w-full min-h-screen bg-gray-12 flex flex-col gap-10 justify-center items-center"
     >
       <div className="w-full flex flex-col gap-20 items-center justify-center p-6 my-24">
-        <p className="uppercase text-gray-10 text-6xl font-serif font-extrabold">
+        <p className="uppercase text-gray-10 text-4xl xl:text-6xl sm:text-5xl font-serif font-extrabold">
           Projects
         </p>
         <div className="flex flex-col gap-6">
