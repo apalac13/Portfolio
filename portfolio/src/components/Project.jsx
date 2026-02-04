@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import githubicon from "../../public/github.svg";
-import link from "../../public/github.svg";
+import link from "../../public/link.svg";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
