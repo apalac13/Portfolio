@@ -3,6 +3,7 @@ import Image from "next/image";
 import githubicon from "../../public/github.svg";
 import link from "../../public/github.svg";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Project({
   name,
@@ -13,7 +14,13 @@ export default function Project({
   demo,
 }) {
   return (
-    <div className="w-full h-full flex flex-col items-center gap-10  bg-gold-20 border rounded-lg border-gold-20 py-14">
+    <motion.div
+      initial={{ opacity: 0, x: -20 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: true }}
+      className="w-full h-full flex flex-col items-center gap-10  bg-gold-20 border rounded-lg border-gold-20 py-14"
+    >
       <p className="font-serif text-gray-10 text-2xl sm:text-3xl md:text-4xl">
         {name}
       </p>
@@ -41,7 +48,11 @@ export default function Project({
           <p className="text-start text-base">{description}</p>
           <div className="flex gap-3">
             <Link href={github}>
-              <button className="w-[150px] h-[60px] flex items-center justify-center gap-2 border rounded-lg border-gray-13 bg-gray-13 cursor-pointer">
+              <button
+                className="w-[150px] h-[60px] flex items-center justify-center gap-2 border rounded-lg border-gray-13 bg-gray-13 cursor-pointer transition-all duration-300 ease-out
+    hover:scale-105 hover:shadow-lg
+    active:scale-95"
+              >
                 <Image
                   src={githubicon}
                   alt="Github icon"
@@ -52,7 +63,11 @@ export default function Project({
               </button>
             </Link>
             <Link href={demo}>
-              <button className="w-[150px] h-[60px] flex items-center justify-center gap-2 border rounded-lg border-gray-13 bg-gray-13 cursor-pointer">
+              <button
+                className="w-[150px] h-[60px] flex items-center justify-center gap-2 border rounded-lg border-gray-13 bg-gray-13 cursor-pointer transition-all duration-300 ease-out
+    hover:scale-105 hover:shadow-lg
+    active:scale-95"
+              >
                 <Image src={link} alt="link icon" width={40} height={40} />
                 <p className="font-serif text-[14px]  md:text-base">Website</p>
               </button>
@@ -60,6 +75,6 @@ export default function Project({
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

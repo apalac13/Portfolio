@@ -5,6 +5,7 @@ import sapedesktop from "../../public/project2-desktop.png";
 import sapemobile from "../../public/project2-mobile.png";
 import schooldesktop from "../../public/project3-desktop.png";
 import schoolmobile from "../../public/project3-mobile.png";
+import { motion } from "framer-motion";
 
 export default function Projects() {
   const projects = [
@@ -43,9 +44,15 @@ export default function Projects() {
       className="w-full min-h-screen bg-gray-12 flex flex-col gap-10 justify-center items-center"
     >
       <div className="w-full flex flex-col gap-20 items-center justify-center p-6 my-24">
-        <p className="uppercase text-gray-10 text-4xl xl:text-6xl sm:text-5xl font-serif font-extrabold">
+        <motion.p
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="uppercase text-gray-10 text-4xl xl:text-6xl sm:text-5xl font-serif font-extrabold"
+        >
           Projects
-        </p>
+        </motion.p>
         <div className="flex flex-col gap-6">
           {projects.map((project, index) => (
             <Project
