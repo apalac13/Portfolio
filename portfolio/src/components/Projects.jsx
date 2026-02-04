@@ -23,7 +23,7 @@ export default function Projects() {
       desktop: sapedesktop,
       mobile: sapemobile,
       description:
-        "A React (Vite) application with a JSON Server backend that provides a complete system for animal adoption and donations, allowing users to adopt animals or send donations, while admins can manage animals, create donation requests, and approve submitted donations.(Please wait a few seconds for the full view when visitig website.)",
+        "A React (Vite) application with a JSON Server backend that provides a complete system for animal adoption and donations, allowing users to adopt animals or send donations, while admins can manage animals, create donation requests, and approve submitted donations. (Please wait a few seconds for the full view when visitig website.)",
       github: "https://github.com/apalac13/SretneSape",
       demo: "sretne-sape.vercel.app",
     },
