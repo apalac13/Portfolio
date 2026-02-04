@@ -1,10 +1,9 @@
 "use client";
 
-export default function Button({ width, height, text, color }) {
+export default function Button({ text, color }) {
   return (
     <button
-      style={{ width, height }}
-      className={`flex items-center justify-center border rounded-md cursor-pointer
+      className={`flex items-center justify-center border rounded-md cursor-pointer w-60 h-[70px] max-xl:w-[220px] max-xl:h-[60px] max-sm:w-[200px] max-sm:h-[50px]
         ${
           (color === "white" && "border-gray-13 bg-gray-13") ||
           (color === "gray" && "border-gray-11 bg-gray-11")
@@ -13,7 +12,7 @@ export default function Button({ width, height, text, color }) {
     >
       <p
         className={`
-           text-lg font-serif font-light
+           text-lg max-xl:text-base max-sm:text-sm font-serif font-light
           ${
             (color === "white" && "text-gray-10") ||
             (color === "gray" && "text-gray-13")

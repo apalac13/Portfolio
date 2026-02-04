@@ -9,11 +9,11 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="w-full h-28 flex gap-11 items-center justify-center  border-b-2 border-gray-13 fixed z-20">
+    <nav className="w-full h-24 flex items-center justify-center gap-4 border-b-2 border-gray-13 fixed z-20 sm:gap-9 xl:h-28 xl:gap-11">
       {navItems.map((item, index) => (
         <Link
           href={item.link}
-          className=" text-[34px] font-semibold font-serif cursor-pointer"
+          className="text-xl sm:text-2xl xl:text-[34px] font-semibold font-serif cursor-pointer  "
           key={index}
         >
           {item.name}
