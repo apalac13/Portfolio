@@ -2,6 +2,7 @@
 import Navigation from "./Navigation";
 import Button from "./Button";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Landing() {
   return (
@@ -30,8 +31,12 @@ export default function Landing() {
           </p>
         </div>
         <div className="flex flex-row max-sm:flex-col max-sm:gap-3 gap-9">
-          <Button text={"VIEW PROJECTS"} color={"white"} />
-          <Button text={"CONTACT"} color={"gray"} />
+          <Link href={"#projects"}>
+            <Button text={"VIEW PROJECTS"} color={"white"} />
+          </Link>
+          <Link href={"#contact"}>
+            <Button text={"CONTACT"} color={"gray"} />
+          </Link>
         </div>
       </motion.div>
     </section>
