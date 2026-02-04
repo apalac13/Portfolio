@@ -1,5 +1,6 @@
 import "./globals.css";
 import { notoSans, notoSerif } from "./fonts";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   title: "Ana Bradaric",
@@ -17,7 +18,10 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${notoSans.variable} ${notoSerif.variable}`}>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
