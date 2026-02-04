@@ -46,7 +46,7 @@ export default function Contact() {
           </p>
           <div className="flex gap-6">
             <a
-              href="https://www.linkedin.com/in/ana-palac-210a98318"
+              href="https://www.linkedin.com/in/ana-bradari%C4%87-210a98318/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
